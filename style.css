@@ -82,6 +82,7 @@ main {
     width: 240px;
     height: 240px;
     object-fit: cover;
+    object-position: center 30%;
     border-radius: 50%;
     border: 4px solid #0b1d3a;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
