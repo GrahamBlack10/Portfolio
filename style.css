@@ -144,8 +144,9 @@ main {
 .btn {
     display: inline-block;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 12px 30px;
-    background-color: #007bff;
+    background-color: #0b1d3a;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -200,4 +201,299 @@ footer h2 {
 
 .contact-links a:hover {
     text-decoration: underline;
+}
+
+/* === Project Section Styling === */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-details {
+    background-color: white;
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.project-details:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-details h1 {
+    font-size: 2rem;
+    color: #0b1d3a;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.project-description h2 {
+    font-size: 1.4rem;
+    color: #122a4a;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project-description p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.project-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.project-description ul li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Adjust GitHub Button in Projects */
+.project-details .btn {
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 10px 24px;
+    background-color: #0b1d3a;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-details .btn:hover {
+    background-color: #122a4a;
+}
+
+/* === Experience Section Styling === */
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    background-color: white;
+    padding: 30px 35px;
+    border-radius: 10px;
+    gap: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.experience-item h2 {
+    font-size: 1.4rem;
+    color: #122a4a;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.experience-company,
+.experience-duration,
+.experience-location {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.experience-item ul li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Section Header */
+.experience-section>h1 {
+    font-size: 2rem;
+    color: #0b1d3a;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* === Skills Section Styling === */
+.skills-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.skills-section h1 {
+    font-size: 2.4rem;
+    color: #0b1d3a;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* Grid for skill categories: 2 columns */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px; /* add some horizontal padding so boxes don't hug edges on small screens */
+}
+
+/* Optional: Make it a bit more responsive on narrower screens */
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* switch to single column on small screens */
+        grid-template-rows: auto;
+        gap: 20px;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+
+/* Each skill category box */
+.skills-category {
+    background-color: white;
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.skills-category:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skills-category h2 {
+    font-size: 1.6rem;
+    color: #122a4a;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills-category ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills-category li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+/* === Responsive Adjustments for Tablets and Below === */
+@media (max-width: 1024px) {
+    .about-boxes {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+
+    .about-box {
+        width: 100%;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-container,
+    .experience-container,
+    .skills-container {
+        padding: 20px;
+    }
+}
+
+/* === Responsive Adjustments for Mobile Phones === */
+@media (max-width: 600px) {
+    header {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1rem;
+    }
+
+    .profile-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .about-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .about-boxes {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .about-box {
+        padding: 20px;
+        height: auto;
+    }
+
+    .btn {
+        width: 90%;
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .project-details,
+    .experience-item,
+    .skills-category {
+        padding: 20px;
+    }
+
+    .skills-section h1,
+    .experience-section > h1 {
+        font-size: 1.8rem;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
